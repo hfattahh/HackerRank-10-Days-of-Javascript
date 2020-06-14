@@ -29,15 +29,7 @@ function readLine() {
  * nums: An array of numbers.
  */
 function modifyArray(nums) {
-    const newArray = nums.map(function(num) {
-        
-        if (num % 2 == 0){
-                return 2*num;
-            }
-        
-        else{return 3*num;}
-    });
-    return newArray;
+    return nums.map(num => num = (num % 2 == 0) ? num * 2 : num * 3);
 }
 
 
